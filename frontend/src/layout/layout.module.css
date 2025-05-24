@@ -8,7 +8,7 @@
 }
 
 .menu_layout {
-    background: linear-gradient(rgba(207, 142, 107, 0.8), rgba(172, 148, 132, 0.7));
+    background: linear-gradient(rgba(255, 255, 255, 0.792), rgba(172, 148, 132, 0.836));
     width: 94vw;
     border-radius: 0 0 15px 15px;
     display: flex;
@@ -70,12 +70,12 @@
 
 .dropdownMenu {
     position: absolute;
-    top: 90%;
+    top: 100%;
     left: 50%;
     transform: translateX(-50%);
     min-width: 200px;
-    background: linear-gradient(rgba(202, 142, 110, 0.9), rgba(172, 148, 132, 0.85));
-    border-radius: 0 0 15px 15px;
+    background: rgb(185, 161, 145);
+    border-radius: 0;
     box-shadow:
         0 4px 6px rgba(0, 0, 0, 0.1),
         0 1px 3px rgba(0, 0, 0, 0.08),
@@ -84,7 +84,7 @@
     margin-top: 0px;
     animation: fadeIn 0.3s ease;
     z-index: 101;
-    border: 1px solid #581d13;
+    border: 0px solid #581d13;
     border-top: none;
 }
 
