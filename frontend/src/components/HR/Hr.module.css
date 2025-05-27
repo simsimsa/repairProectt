@@ -1,5 +1,12 @@
-.hr{
-    color: 2px solid black;
-    border-color: #6d5115;
+hr {
+    border: 0;
+    height: 3px;
     width: 100%;
+    background: linear-gradient(90deg,
+            transparent,
+            #6d5115 20%,
+            #b8860b 50%,
+            #6d5115 80%,
+            transparent);
+    box-shadow: 0 2px 4px rgba(109, 81, 21, 0.3); 
 }

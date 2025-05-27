@@ -23,3 +23,13 @@
     align-items: center;
     justify-content: space-between;
 }
+
+.container {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 75vw;
+    min-width: 1000px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}

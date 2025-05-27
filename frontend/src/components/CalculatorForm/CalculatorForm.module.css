@@ -1,0 +1,126 @@
+h3{
+    font-size: 38px;
+    margin: 0;
+}
+
+option{
+    color: black;
+}
+
+.subtitle{
+    font-size: 28px;
+    margin: 0;
+}
+
+.formContainer{
+    padding: 20px 0 0 0;
+}
+
+.calculator {
+    min-width: 800px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f530;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(62, 22, 1, 0.732);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    box-shadow:
+        0 4px 12px rgba(109, 81, 21, 0.4),
+        inset 0 0 10px rgba(184, 134, 11, 0.2);
+}
+
+.calculator::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: 14px;
+    background: linear-gradient(90deg,
+            transparent,
+            #805f18 15%,
+            #b8860b 45%,
+            #b8860b 55%,
+            #805f18 85%,
+            transparent);
+    z-index: -1;
+    filter: drop-shadow(0 0 6px rgba(184, 134, 11, 0.6));
+}
+
+.paramsTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.paramsTable th {
+    width: 33%;
+    padding: 12px 5px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.301);
+    text-align: center;
+    border-radius: 4px 4px 0 0;
+}
+
+.paramsTable td {
+    width: 33%;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    border-radius: 0 0 4px 4px;
+    background-color: rgba(255, 255, 255, 0.301);
+}
+
+select,
+input {
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(62, 22, 1, 0.732);
+    width: 85%;
+    padding: 8px;
+    border: 1px solid #00000037;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.calculationResult {
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.301);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 40px 0 0 0;
+}
+
+.priceUpdated {
+    animation: pulse 0.5s ease;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.disclaimer {
+    font-style: italic;
+    font-size: 14px;
+    text-align: center;
+    color: #666; }
