@@ -66,24 +66,6 @@
     min-width: 150px;
 }
 
-.linkTitle {
-    color: #F8D49E;
-    font-size: 18px;
-    margin-bottom: 20px;
-    position: relative;
-    padding-bottom: 10px;
-}
-
-.linkTitle::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 40px;
-    height: 2px;
-    background: #B8860B;
-}
-
 .linkColumn ul {
     list-style: none;
     padding: 0;
@@ -171,6 +153,17 @@
   animation: navLinkUnderline 0.3s ease-out;
 }
 
+.activeNavLink,
+.activeNavLink:link,
+.activeNavLink:visited,
+.activeNavLink:hover,
+.activeNavLink:active,
+.activeNavLink:focus {
+    color: #F8D49E !important;
+    font-weight: 500;
+    text-decoration: none !important;
+}
+
 @keyframes navLinkUnderline {
   from { width: 0; }
   to { width: 100%; }
@@ -185,4 +178,22 @@
 .mailLink:hover {
   color: #F8D49E;
   text-decoration: underline;
+}
+
+.linkTitle {
+    color: #F8D49E;
+    font-size: 18px;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.linkTitle::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: #B8860B;
 }

@@ -19,7 +19,9 @@ function Footer () {
 
         <div className={styles.links}>
           <div className={styles.linkColumn}>
-            <h4 className={styles.linkTitle}>Услуги</h4>
+            <h4 className={styles.linkTitle}><NavLink 
+                  to="/" 
+                  className={styles.navLink}>Услуги</NavLink></h4>
             <ul>
               {services.map((service) => (
                 <li key={service.path}>
