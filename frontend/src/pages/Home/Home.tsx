@@ -1,5 +1,6 @@
 import Button from "../../components/Button/Button";
 import CalculatorForm from "../../components/CalculatorForm/CalculatorForm";
+import CostRecommended from "../../components/CostRecommended/CostRecommended";
 import Description from "../../components/Description/Description";
 import Features from "../../components/Features/Features";
 import Header from "../../components/Header/Header";
@@ -113,6 +114,11 @@ export function Home() {
                     ))}
                 </div>
             </section>
+            <Hr/>
+            <section>
+                <CostRecommended/>
+            </section>
+            <Hr/>
         </div>
     )
 }

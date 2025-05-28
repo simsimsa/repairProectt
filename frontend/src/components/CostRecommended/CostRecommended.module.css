@@ -1,0 +1,168 @@
+.calculationBlock {
+    background: rgba(40, 30, 10, 0.85);
+    border: 1px solid rgba(184, 134, 11, 0.4);
+    border-radius: 15px;
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 800px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(109, 81, 21, 0.3),
+        inset 0 0 20px rgba(184, 134, 11, 0.2);
+}
+
+.calculationBlock::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg,
+            transparent,
+            #B8860B,
+            #CBB376,
+            #B8860B,
+            transparent);
+    animation: borderFlow 8s linear infinite;
+}
+
+@keyframes borderFlow {
+    0% {
+        background-position: -100% 0;
+    }
+
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.title {
+    margin-top: 0;
+    color: #F8D49E;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    line-height: 1.3;
+}
+
+.qualityControl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.qualityIcon {
+    width: 80px;
+    height: 80px;
+    background: rgba(184, 134, 11, 0.1);
+    border: 2px solid rgba(184, 134, 11, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.qualityIcon svg {
+    width: 40px;
+    height: 40px;
+}
+
+.qualityControl:hover .qualityIcon {
+    background: rgba(184, 134, 11, 0.2);
+    border-color: rgba(203, 179, 118, 0.5);
+    transform: scale(1.05);
+}
+
+.qualityTitle {
+    color: #CBB376;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+}
+
+.qualityTitle::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(to right,
+            transparent,
+            #B8860B,
+            transparent);
+    transition: all 0.3s ease;
+}
+
+.qualityControl:hover .qualityTitle::after {
+    width: 100px;
+    background: linear-gradient(to right,
+            transparent,
+            #F8D49E,
+            transparent);
+}
+
+.benefits {
+    background: rgba(30, 22, 8, 0.6);
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(184, 134, 11, 0.2);
+}
+
+.benefitsTitle {
+    margin-top: 0;
+    color: #F8D49E;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.benefitsList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    color: #CBB376;
+    line-height: 1.6;
+}
+
+.benefitsList li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+}
+
+.benefitsList li::before {
+    content: "+";
+    color: #B8860B;
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+.callToAction {
+    margin-top: 0;
+    color: #FFF8E1;
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+}
