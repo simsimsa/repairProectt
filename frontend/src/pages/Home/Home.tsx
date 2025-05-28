@@ -1,5 +1,6 @@
 import Button from "../../components/Button/Button";
 import CalculatorForm from "../../components/CalculatorForm/CalculatorForm";
+import Features from "../../components/Features/Features";
 import Header from "../../components/Header/Header";
 import Hr from "../../components/HR/Hr";
 import styles from './Home.module.css'
@@ -23,6 +24,7 @@ export function Home() {
                 <Header/>
                 <CalculatorForm/>
             </div>
+            <Features/>
             <Hr/>
         </div>
     )

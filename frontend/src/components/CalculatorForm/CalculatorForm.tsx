@@ -109,7 +109,7 @@ const CalculatorForm: React.FC = () => {
           </span>
         </div>
 
-        <p className="disclaimer">
+        <p className={styles.disclaimer}>
           *Сумма данного расчета не является окончательной, точную стоимость укажет прораб.
         </p>
       </div>
