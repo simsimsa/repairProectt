@@ -2,6 +2,7 @@ import { NavLink, Outlet, useLocation } from "react-router-dom";
 import styles from "./layout.module.css";
 import cn from "classnames";
 import { useState } from "react";
+import Footer from "../components/Footer/Footer";
 
 const services = [
     { name: "Ремонт и отделка", path: "repair" },
@@ -115,6 +116,7 @@ export function Layout() {
             <div className={styles["outlet"]}>
                 <Outlet />
             </div>
+            <Footer/>
         </div>
     );
 }

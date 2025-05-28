@@ -1,0 +1,188 @@
+.footer {
+    width: 100%;
+    background: rgba(30, 22, 8, 0.95);
+    color: #CBB376;
+    padding: 20px 0 0;
+    position: relative;
+    border-top: 1px solid rgba(184, 134, 11, 0.3);
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg,
+            transparent,
+            #B8860B,
+            #CBB376,
+            #B8860B,
+            transparent);
+}
+
+.topSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 50px 10px;
+    gap: 40px;
+}
+
+.logoSection {
+    margin-top: 20px;
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
+}
+
+.logo {
+    color: #F8D49E;
+    font-size: 32px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+}
+
+.slogan {
+    line-height: 1.6;
+    opacity: 0.9;
+    font-size: 18px;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    flex: 2;
+}
+
+.linkColumn {
+    min-width: 150px;
+}
+
+.linkTitle {
+    color: #F8D49E;
+    font-size: 18px;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.linkTitle::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: #B8860B;
+}
+
+.linkColumn ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.linkColumn li {
+    margin-bottom: 12px;
+    transition: all 0.3s ease;
+}
+
+.linkColumn li:hover {
+    transform: translateX(5px);
+}
+
+.contacts li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.contacts svg {
+    flex-shrink: 0;
+}
+
+.bottomSection {
+    background: rgba(20, 15, 5, 0.9);
+    padding: 20px;
+    border-top: 1px solid rgba(184, 134, 11, 0.2);
+    text-align: center;
+}
+
+.copyright {
+    opacity: 0.8;
+    font-size: 14px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .topSection {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .links {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .slogan {
+        font-size: 16px;
+    } }
+
+.navLink {
+  color: #CBB376;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  position: relative;
+}
+
+.navLink:hover {
+  color: #F8D49E;
+}
+
+.activeNavLink {
+  color: #F8D49E;
+  font-weight: 500;
+}
+
+.activeNavLink::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #B8860B;
+  animation: navLinkUnderline 0.3s ease-out;
+}
+
+@keyframes navLinkUnderline {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.mailLink {
+  color: #CBB376;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.mailLink:hover {
+  color: #F8D49E;
+  text-decoration: underline;
+}
