@@ -2,6 +2,7 @@ import Button from "../../components/Button/Button";
 import CalculatorForm from "../../components/CalculatorForm/CalculatorForm";
 import CostRecommended from "../../components/CostRecommended/CostRecommended";
 import Description from "../../components/Description/Description";
+import FAQSection from "../../components/FAQSection/FAQSection";
 import Features from "../../components/Features/Features";
 import Header from "../../components/Header/Header";
 import Hr from "../../components/HR/Hr";
@@ -97,7 +98,7 @@ export function Home() {
                     Оставьте заявку на сайте или позвоните нам - мы возьмем на себя все заботы по реализации вашего проекта.
                     </Description>
                     <Description>
-                    Компания «СТРОЙ-КОМФОРТ» специализируется на ремонте квартир и строительстве зданий. В нашем штате - профессиональные строители, отделочники, проектировщики и инженеры с многолетним опытом работы в условиях сыктывкарского климата.
+                    Компания «НАЗВАНИЕ» специализируется на ремонте квартир и строительстве зданий. В нашем штате - профессиональные строители, отделочники, проектировщики и инженеры с многолетним опытом работы в условиях сыктывкарского климата.
                     </Description>
                 </div>
                 <div className={styles.cartContainer}>
@@ -119,6 +120,9 @@ export function Home() {
                 <CostRecommended/>
             </section>
             <Hr/>
+            <section>
+                <FAQSection/>
+            </section>
         </div>
     )
 }
