@@ -21,23 +21,22 @@ h3 {
 }
 
 .calculator {
-    min-width: 800px;
+    min-width: 750px;
     min-height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: rgba(40, 30, 10, 0.7);
+    background: rgba(40, 30, 10, 0.85);
     backdrop-filter: blur(5px);
     color: white;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     padding: 30px;
-    border-radius: 15px;
+    border-radius: 12px;
     position: relative;
-    box-shadow:
-        0 8px 32px rgba(109, 81, 21, 0.3),
-        inset 0 0 20px rgba(184, 134, 11, 0.3);
-    border: 1px solid rgba(184, 134, 11, 0.2);
+    box-shadow: 0 8px 32px rgba(109, 81, 21, 0.3),
+            inset 0 0 20px rgba(184, 134, 11, 0.2);
+    border: 1px solid rgba(184, 134, 11, 0.3);
     transition: all 0.4s ease;
 }
 
@@ -90,7 +89,9 @@ h3 {
     width: 33%;
     padding: 15px 5px;
     font-size: 20px;
-    background: linear-gradient(to bottom, rgba(184, 134, 11, 0.7), rgba(128, 95, 24, 0.7));
+    background: linear-gradient(to bottom,
+                rgba(184, 134, 11, 0.7),
+                rgba(128, 95, 24, 0.7));
     text-align: center;
     border-radius: 8px 8px 0 0;
     color: #fff8e1;

@@ -1,5 +1,5 @@
 .layout{
-    margin: 50px;
+    margin: 30px 50px;
 }
 
 .textH1{
@@ -25,7 +25,7 @@
 }
 
 .container {
-    padding: 50px;
+    padding: 40px 0;
     display: flex;
     justify-content: space-between;
     max-width: 75vw;

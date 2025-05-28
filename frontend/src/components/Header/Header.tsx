@@ -6,7 +6,7 @@ const Header = () => {
     <header className={styles.header}>
       <h1>РЕМОНТ</h1>
       <h2>И СТРОИТЕЛЬСТВО</h2>
-      <h3>В СЫКТЫВКАРЕ</h3>
+      <h2>В СЫКТЫВКАРЕ</h2>
       <Hr/>
       <div className={styles.companyName}>«НАЗВАНИЕ - всегда рядом»</div>
     </header>
