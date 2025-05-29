@@ -1,0 +1,326 @@
+.calculatorSection {
+    margin: 0 50px 40px;
+}
+
+.calculatorHeader {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.calculatorTitle {
+    color: #f8d49e;
+    font-size: 28px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 0px;
+}
+
+.calculatorSubtitle {
+    margin: 0;
+    color: #cbb376;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+}
+
+.calculatorBody {
+    background: rgba(40, 30, 10, 0.7);
+    border: 1px solid rgba(184, 134, 11, 0.3);
+    border-radius: 15px;
+    padding: 40px 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.calculatorBody::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg,
+            transparent,
+            #cbb376,
+            #b8860b,
+            #cbb376,
+            transparent);
+    animation: borderFlow 8s linear infinite;
+}
+
+.inputGroup {
+    margin-bottom: 15px;
+}
+
+.inputLabel {
+    display: block;
+    color: #f8d49e;
+    font-size: 18px;
+    margin-bottom: 5px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.rangeContainer {
+    padding: 0 15px;
+}
+
+.rangeInput {
+    width: 100%;
+    height: 8px;
+    -webkit-appearance: none;
+    background: rgba(184, 134, 11, 0.2);
+    border-radius: 4px;
+    outline: none;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.rangeInput::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    background: #f8d49e;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(248, 212, 158, 0.5);
+    transition: all 0.3s ease;
+}
+
+.rangeInput::-webkit-slider-thumb:hover {
+    background: #ffffff;
+    transform: scale(1.1);
+}
+
+.rangeValue {
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.roomSelector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.roomButton {
+    width: 40px;
+    height: 55px;
+    padding-bottom: 18px;
+    background: rgba(184, 134, 11, 0.2);
+    border: 1px solid #b8860b;
+    color: #f8d49e;
+    font-size: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.roomButton:hover {
+    background: rgba(184, 134, 11, 0.4);
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(184, 134, 11, 0.3);
+}
+
+.roomCount {
+    color: #ffffff;
+    font-size: 20px;
+    min-width: 120px;
+    text-align: center;
+}
+
+.radioOptions,
+.checkboxOptions {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.radioOption,
+.checkboxOption {
+    position: relative;
+}
+
+.radioInput,
+.checkboxInput {
+    position: absolute;
+    opacity: 0;
+}
+
+.radioLabel,
+.checkboxLabel {
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+    margin-bottom: 10px;
+    background: rgba(30, 22, 8, 0.5);
+    border: 1px solid rgba(184, 134, 11, 0.3);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.radioLabel:hover,
+.checkboxLabel:hover {
+    border-color: rgba(203, 179, 118, 0.5);
+    background: rgba(40, 30, 10, 0.7);
+}
+
+.radioCustom {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #b8860b;
+    border-radius: 50%;
+    margin-right: 15px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.radioInput:checked~.radioLabel .radioCustom {
+    background: #f8d49e;
+    border-color: #f8d49e;
+}
+
+.radioInput:checked~.radioLabel .radioCustom::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #b8860b;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.checkboxCustom {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #b8860b;
+    border-radius: 4px;
+    margin-right: 15px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.checkboxInput:checked~.checkboxLabel .checkboxCustom {
+    background: #f8d49e;
+    border-color: #f8d49e;
+}
+
+.checkboxInput:checked~.checkboxLabel .checkboxCustom::after {
+    content: "✓";
+    position: absolute;
+    color: #b8860b;
+    font-size: 14px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.radioText,
+.checkboxText {
+    color: #cbb376;
+    flex: 1;
+}
+
+.radioPrice,
+.checkboxPrice {
+    color: #f8d49e;
+    font-weight: bold;
+}
+
+.resultContainer {
+    background: rgba(30, 22, 8, 0.7);
+    border: 1px solid rgba(184, 134, 11, 0.5);
+    border-radius: 10px;
+    padding: 30px 0 10px;
+    text-align: center;
+    margin-top: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.resultContainer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg,
+            transparent,
+            #cbb376,
+            #b8860b,
+            #cbb376,
+            transparent);
+}
+
+.resultHeader {
+    color: #cbb376;
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+
+.resultValue {
+    color: #ffffff;
+    font-size: 42px;
+    font-weight: bold;
+    margin: 15px;
+    text-shadow: 0 0 10px rgba(248, 212, 158, 0.3);
+}
+
+.resultDetails {
+    color: #cbb376;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.submitButton {
+    margin: 0 auto;
+    padding: 15px 40px;
+    font-size: 18px;
+    background: linear-gradient(to right, #b8860b, #cbb376);
+    border: none;
+    box-shadow: 0 5px 15px rgba(184, 134, 11, 0.3);
+    transition: all 0.3s ease;
+}
+
+.submitButton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(184, 134, 11, 0.4);
+}
+
+@keyframes borderFlow {
+    0% {
+        background-position: -100% 0;
+    }
+
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .calculatorBody {
+        padding: 25px 15px;
+    }
+
+    .radioOptions,
+    .checkboxOptions {
+        grid-template-columns: 1fr;
+    }
+
+    .resultValue {
+        font-size: 32px;
+    } }

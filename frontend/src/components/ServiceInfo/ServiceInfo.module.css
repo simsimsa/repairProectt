@@ -1,0 +1,155 @@
+.companyInfo {
+    margin: 0 50px 40px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.title {
+    color: #f8d49e;
+    font-size: 32px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.contentWrapper {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.textContent {
+    flex: 1;
+}
+
+.description {
+    color: #cbb376;
+    text-shadow: 2px 2px 10px rgba(62, 22, 1, 0.732);
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.featuresList {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+.ctaBlock {
+    background: rgba(30, 22, 8, 0.6);
+    border-left: 4px solid #b8860b;
+    padding: 20px;
+    border-radius: 0 8px 8px 0;
+}
+
+.ctaText {
+    color: #f8d49e;
+    text-shadow: 2px 2px 10px rgba(62, 22, 1, 0.732);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.contactBox {
+    padding: 10px;
+    background: rgba(40, 30, 10, 0.4);
+    border-radius: 6px;
+}
+
+.contactText {
+    color: #907d4c;
+    text-shadow: 2px 2px 10px rgba(62, 22, 1, 0.732);
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.phoneLink {
+    color: #f8d49e;
+    font-size: 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.phoneLink:hover {
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(248, 212, 158, 0.5);
+}
+
+.phoneIcon {
+    font-size: 24px;
+    animation: pulse 2s infinite;
+}
+
+.imageWrapper {
+    flex: 0 0 45%;
+    position: relative;
+}
+
+.imagePlaceholder {
+    height: 500px;
+    background: linear-gradient(135deg, rgba(70, 50, 20, 0.2), rgba(40, 30, 10, 0.4));
+    border: 2px solid rgba(184, 134, 11, 0.3);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #cbb376;
+    font-size: 18px;
+    transition: all 0.5s ease;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.imageWrapper:hover .imagePlaceholder {
+    border-color: rgba(203, 179, 118, 0.5);
+    box-shadow: 0 0 20px rgba(184, 134, 11, 0.2);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 1024px) {
+    .contentWrapper {
+        flex-direction: column;
+    }
+
+    .imageWrapper {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .imagePlaceholder {
+        height: 300px;
+    } 
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.imageWrapper:hover .image {
+    transform: scale(1.05);
+}
