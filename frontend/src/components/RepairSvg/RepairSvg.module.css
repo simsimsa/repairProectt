@@ -1,0 +1,130 @@
+.svgContainer {
+    flex: 0 0 45%;
+    max-width: 600px;
+    min-height: 350px;
+    background: rgba(30, 22, 8, 0.3);
+    border: 1px solid rgba(184, 134, 11, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.svgAnimation {
+    transition: all 0.5s ease;
+}
+
+.svgContainer:hover {
+    background: rgba(40, 30, 10, 0.5);
+    border-color: rgba(203, 179, 118, 0.5);
+    box-shadow: 0 0 20px rgba(184, 134, 11, 0.2);
+    transform: translateY(-3px);
+}
+
+.svgContainer:hover .svgBg {
+    fill: rgba(40, 30, 10, 0.5);
+}
+
+.svgContainer:hover .svgHouse {
+    stroke: #F8D49E;
+    fill: rgba(184, 134, 11, 0.1);
+}
+
+.svgContainer:hover .svgRoof {
+    stroke-width: 4;
+    stroke-dasharray: 5;
+}
+
+.svgContainer:hover .svgWindow {
+    stroke: #F8D49E;
+    fill: rgba(203, 179, 118, 0.2);
+    rx: 5;
+}
+
+.svgContainer:hover .svgDoor {
+    stroke: #B8860B;
+    stroke-width: 2;
+    fill: rgba(248, 212, 158, 0.2);
+}
+
+.svgContainer:hover .svgHammer {
+    stroke: #B8860B;
+    stroke-width: 3;
+    transform: rotate(-15deg);
+    transform-origin: 50% 50%;
+}
+
+.svgContainer:hover .svgSaw {
+    stroke: #F8D49E;
+    stroke-width: 3;
+    transform: rotate(15deg);
+    transform-origin: 50% 50%;
+}
+
+.svgContainer:hover .svgWorker {
+    stroke-width: 2;
+    r: 14;
+    animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+    from {
+        opacity: 0.7;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes borderFlow {
+    0% {
+        background-position: -100% 0;
+    }
+
+    100% {
+        background-position: 100% 0;
+    } }
+      
+.svgContainer:hover .svgBuilding {
+    filter: drop-shadow(0 0 8px rgba(248, 212, 158, 0.3));
+}
+      
+.svgContainer:hover .svgConstructionElement {
+    fill: #6a5a4a;
+    stroke: #f8d49e;
+}
+      
+.svgContainer:hover .svgCrane rect {
+    stroke-width: 1.5;
+}
+      
+.svgContainer:hover .svgCrane rect:last-child {
+    fill: #cbb376;
+    animation: lift 2s infinite alternate;
+}
+      
+.svgContainer:hover .svgWorkers circle {
+    stroke-width: 2;
+    r: 9;
+}
+      
+.svgContainer:hover .svgTools path {
+    stroke-width: 4;
+    transform: rotate(-5deg);
+    transform-origin: center;
+}
+      
+.svgContainer:hover .svgMaterials rect {
+    stroke: #f8d49e;
+    transform: translateY(-3px);
+}
+      
+@keyframes lift {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-15px); }
+}
+      
+@keyframes borderFlow {
+    0% { background-position: -100% 0; }
+    100% { background-position: 100% 0; }
+}

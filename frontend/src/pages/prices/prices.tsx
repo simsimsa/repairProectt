@@ -1,5 +1,11 @@
+import Hr from "../../components/HR/Hr";
+import { PriceSection } from "../../components/PriceSection/PriceSection";
+
 export function Prices() {
     return (
-        <div>Тут будет про цены</div>
+        <div>
+            <PriceSection/>
+            <Hr />
+        </div>
     )
 }
