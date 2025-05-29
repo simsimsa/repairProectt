@@ -9,7 +9,7 @@ function Features() {
   const features: FeatureItem[] = [
     { 
         title: 'Опыт работы с 2000 года',
-        description: '22 года безупречной работы' 
+        description: '29 лет безупречной работы' 
       },
       { 
         title: 'Строгий контроль качества',

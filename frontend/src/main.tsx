@@ -12,7 +12,7 @@ import { Prices } from './pages/prices/prices';
 import { Gallery } from './pages/gallery/gallery';
 import { Service } from './pages/service/service';
 import { Company } from './pages/company/company';
-import { Contacts } from './pages/contacts/contscts';
+import { Contacts } from './pages/contacts/contacts';
 
 const router = createBrowserRouter([
   {

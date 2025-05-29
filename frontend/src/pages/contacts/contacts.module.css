@@ -1,0 +1,114 @@
+.contactsPage {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 0;
+    color: #CBB376;
+    text-shadow: 2px 2px 10px rgba(62, 22, 1, 0.732);
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.divider {
+    height: 3px;
+    background: linear-gradient(90deg,
+            transparent,
+            #B8860B,
+            #CBB376,
+            #B8860B,
+            transparent);
+    width: 200px;
+    margin: 0 auto 20px;
+}
+
+.subtitle {
+    font-size: 20px;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contactBlocks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+    align-items: stretch;
+}
+
+.infoTitle {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 20px 0 5px;
+    color: #E6D5A8;
+}
+
+.phone,
+.email {
+    display: block;
+    color: #CBB376;
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.phone:hover,
+.email:hover {
+    color: #F8D49E;
+}
+
+.workTime,
+.responseTime {
+    font-size: 14px;
+    opacity: 0.8;
+    margin-top: 15px;
+    font-style: italic;
+}
+
+.infoText {
+    margin-bottom: 15px;
+}
+
+.messengers {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.messengerLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #CBB376;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 6px;
+    background: rgba(40, 30, 10, 0.5);
+    transition: all 0.3s ease;
+}
+
+.messengerLink:hover {
+    background: rgba(184, 134, 11, 0.2);
+    color: #F8D49E;
+}
+
+.messengerLink svg {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 768px) {
+    .contactCard {
+        padding: 25px 20px;
+    }
+
+    .additionalInfo {
+        padding: 25px 20px;
+    }
+}
