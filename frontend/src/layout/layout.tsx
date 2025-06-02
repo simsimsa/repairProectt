@@ -7,7 +7,7 @@ import Footer from "../components/Footer/Footer";
 const services = [
     { name: "Ремонт и отделка", path: "repair" },
     { name: "Дизайн помещений", path: "design" },
-    { name: "Консультация по ремонту", path: "consultation" }
+    { name: "Строительство зданий", path: "consultation" }
 ];
 
 export function Layout() {
