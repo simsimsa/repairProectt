@@ -9,7 +9,6 @@ export function Contacts() {
         <div className={styles.contactsPage}>
           <div className={styles.header}>
             <Title>КОНТАКТЫ ДЛЯ СВЯЗИ</Title>
-            <div className={styles.divider}></div>
             <div className={styles.subtitle}>Мы всегда на связи и готовы ответить на ваши вопросы</div>
           </div>
     

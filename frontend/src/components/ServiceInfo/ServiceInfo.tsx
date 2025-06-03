@@ -1,4 +1,3 @@
-import Hr from '../HR/Hr';
 import Title from '../Title/Title';
 import Description from '../Description/Description';
 import { FeatureItems } from '../../ExportInfo/FeatureItems';
@@ -10,7 +9,6 @@ export function ServiceInfo() {
     <section className={styles.companyInfo}>
       <div className={styles.header}>
         <Title>«НАЗВАНИЕ» - ВСЕГДА РЯДОМ</Title>
-        <Hr />
       </div>
 
       <div className={styles.contentWrapper}>

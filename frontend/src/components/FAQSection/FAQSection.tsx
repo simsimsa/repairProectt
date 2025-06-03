@@ -74,7 +74,6 @@ function FAQSection() {
   return (
     <section className={styles.faqSection} id='faq'>
       <Title>ВОПРОСЫ И ОТВЕТЫ</Title>
-      <div className={styles.divider}></div>
       <div className={styles.sectionSubtitle}>НАС ЧАСТО СПРАШИВАЮТ:</div>
       
       <div className={styles.faqContainer}>
