@@ -3,9 +3,7 @@
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     gap: 25px;
     padding: 20px;
-    background: linear-gradient(to bottom,
-                rgba(40, 30, 10, 0.8),
-                rgba(70, 50, 20, 0.9));
+    background: rgba(30, 22, 8, 0.7);
     border: 1px solid rgba(184, 134, 11, 0.3);
     border-radius: 15px;
     margin-top: 0;
@@ -46,7 +44,7 @@
     border-radius: 10px;
     padding: 15px;
     text-align: center;
-    transition: all 0.4s ease;
+    transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
     backdrop-filter: blur(5px);

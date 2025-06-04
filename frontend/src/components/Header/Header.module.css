@@ -8,16 +8,16 @@
     font-size: 56px;
     margin: 0;
     background: linear-gradient(to right,
-            #fcfcfbd4,
-            #cfb783,
-            #e6c200,
-            #c9ae74,
-            #fcfcfbd4);
+                #f8f4e6,
+                #d4af37,
+                #f5d062,
+                #d4af37,
+                #f8f4e6);
     background-size: 200% auto;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    text-shadow: 2px 2px 5px rgba(62, 22, 1, 0.732);
+    text-shadow: 2px 2px 8px rgba(109, 81, 21, 0.6);
     padding: 15px 50px;
     display: inline-block;
     position: relative;
@@ -28,16 +28,16 @@
     font-size: 48px;
     margin: 0;
     background: linear-gradient(to right,
-            #fcfcfbd4,
-            #cfb783,
-            #e6c200,
-            #c9ae74,
-            #fcfcfbd4);
+            #f8f4e6,
+            #d4af37,
+            #f5d062,
+            #d4af37,
+            #f8f4e6);
     background-size: 200% auto;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    text-shadow: 2px 2px 5px rgba(62, 22, 1, 0.732);
+    text-shadow: 2px 2px 6px rgba(109, 81, 21, 0.6);
     padding: 10px 40px;
     display: inline-block;
     position: relative;
@@ -48,8 +48,8 @@
     font-size: 28px;
     font-weight: bold;
     margin: 0;
-    color: #fbf0cce1;
-    text-shadow: 1px 5px 5px rgba(62, 22, 1, 0.5);
+    color: #f8e8c8;
+    text-shadow: 1px 1px 4px rgba(109, 81, 21, 0.6);
     padding: 8px 30px;
     display: inline-block;
 }
