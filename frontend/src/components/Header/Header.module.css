@@ -8,11 +8,11 @@
     font-size: 56px;
     margin: 0;
     background: linear-gradient(to right,
-                #f8f4e6,
-                #d4af37,
-                #f5d062,
-                #d4af37,
-                #f8f4e6);
+            #f8f4e6,
+            #d4af37,
+            #f5d062,
+            #d4af37,
+            #f8f4e6);
     background-size: 200% auto;
     -webkit-background-clip: text;
     background-clip: text;
@@ -54,8 +54,6 @@
     display: inline-block;
 }
 
-
-
 .mainTitle::before {
     top: 0;
     left: 0;
@@ -94,27 +92,51 @@
     }
 }
 
+@media (max-width: 1024px) {
+    .mainTitle {
+        font-size: 48px;
+        padding: 12px 40px;
+    }
+
+    .subTitle {
+        font-size: 40px;
+        padding: 8px 35px;
+    }
+
+    .companyName {
+        font-size: 24px;
+    }
+}
+
 @media (max-width: 768px) {
     .mainTitle {
-        font-size: 42px;
+        font-size: 36px;
         padding: 10px 30px;
     }
 
     .subTitle {
-        font-size: 36px;
-        padding: 8px 25px;
+        font-size: 30px;
+        padding: 6px 25px;
     }
 
     .companyName {
-        font-size: 22px;
-        padding: 6px 20px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mainTitle {
+        font-size: 28px;
+        padding: 8px 20px;
     }
 
-    .mainTitle::before,
-    .mainTitle::after,
-    .subTitle::before,
-    .subTitle::after {
-        width: 20px;
-        height: 20px;
+    .subTitle {
+        font-size: 24px;
+        padding: 5px 15px;
+    }
+
+    .companyName {
+        font-size: 18px;
+        padding: 5px 15px;
     }
 }

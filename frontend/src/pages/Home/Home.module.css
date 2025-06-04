@@ -1,8 +1,6 @@
-.layout{
+.layout {
     margin: 30px 50px;
 }
-
-
 
 .textH1 {
     font-size: 24px;
@@ -42,9 +40,10 @@
     border-radius: 10px;
     margin-bottom: 40px;
     line-height: 1.6;
-    border: 1px solid rgba(184, 134, 11, 0.3); }
+    border: 1px solid rgba(184, 134, 11, 0.3);
+}
 
-.cartContainer{
+.cartContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -52,4 +51,62 @@
     padding: 30px;
     border-radius: 15px;
     margin-bottom: 40px;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 90vw;
+        min-width: auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .h1Header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .H1HeaderContainer {
+        width: 80%;
+        align-items: center;
+    }
+
+    .cartContainer {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .layout {
+        margin: 20px;
+    }
+
+    .textH1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .intro {
+        padding: 15px;
+    }
+
+    .cartContainer {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .layout {
+        margin: 15px 10px;
+    }
+
+    .textH1 {
+        font-size: 18px;
+    }
+
+    .H1HeaderContainer {
+        width: 100%;
+    }
 }

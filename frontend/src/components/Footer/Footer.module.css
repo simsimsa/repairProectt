@@ -25,7 +25,7 @@
 .topSection {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     max-width: 1600px;
     margin: 0 auto;
     padding: 0 50px 10px;
@@ -57,7 +57,7 @@
 .links {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     gap: 40px;
     flex: 2;
 }
@@ -106,78 +106,43 @@
     margin: 0 auto;
 }
 
-@media (max-width: 768px) {
-    .topSection {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .links {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .logo {
-        font-size: 28px;
-    }
-
-    .slogan {
-        font-size: 16px;
-    } }
-
 .navLink {
-  color: #CBB376;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  display: inline-block;
-  position: relative;
+    color: #CBB376;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    position: relative;
 }
 
 .navLink:hover {
-  color: #F8D49E;
+    color: #F8D49E;
 }
 
 .activeNavLink {
-  color: #F8D49E;
-  font-weight: 500;
+    color: #F8D49E;
+    font-weight: 500;
 }
 
 .activeNavLink::after {
-  content: "";
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: #B8860B;
-  animation: navLinkUnderline 0.3s ease-out;
-}
-
-.activeNavLink,
-.activeNavLink:link,
-.activeNavLink:visited,
-.activeNavLink:hover,
-.activeNavLink:active,
-.activeNavLink:focus {
-    color: #F8D49E !important;
-    font-weight: 500;
-    text-decoration: none !important;
-}
-
-@keyframes navLinkUnderline {
-  from { width: 0; }
-  to { width: 100%; }
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #B8860B;
+    animation: navLinkUnderline 0.3s ease-out;
 }
 
 .mailLink {
-  color: #CBB376;
-  text-decoration: none;
-  transition: color 0.3s ease;
+    color: #CBB376;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .mailLink:hover {
-  color: #F8D49E;
-  text-decoration: underline;
+    color: #F8D49E;
+    text-decoration: underline;
 }
 
 .linkTitle {
@@ -196,4 +161,143 @@
     width: 40px;
     height: 2px;
     background: #B8860B;
+}
+
+@keyframes navLinkUnderline {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .topSection {
+        padding: 0 40px 10px;
+        gap: 30px;
+    }
+
+    .links {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .topSection {
+        padding: 0 30px 10px;
+        gap: 25px;
+    }
+
+    .logoSection {
+        min-width: 100%;
+        margin-top: 10px;
+    }
+
+    .links {
+        width: 100%;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .linkColumn {
+        min-width: 45%;
+    }
+
+    .contacts li {
+        margin-bottom: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .topSection {
+        flex-direction: column;
+        padding: 0 25px 10px;
+        gap: 30px;
+    }
+
+    .logo {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .slogan {
+        font-size: 16px;
+    }
+
+    .links {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .linkColumn {
+        min-width: 100%;
+    }
+
+    .linkTitle {
+        font-size: 17px;
+        margin-bottom: 15px;
+    }
+
+    .linkColumn li {
+        margin-bottom: 10px;
+    }
+
+    .contacts li {
+        margin-bottom: 10px;
+    }
+
+    .bottomSection {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .topSection {
+        padding: 0 20px 10px;
+        gap: 25px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .slogan {
+        font-size: 15px;
+    }
+
+    .linkTitle {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    .navLink,
+    .mailLink,
+    .contacts li {
+        font-size: 14px;
+    }
+
+    .contacts svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .copyright {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 400px) {
+    .topSection {
+        padding: 0 15px 10px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .bottomSection {
+        padding: 12px;
+    }
 }

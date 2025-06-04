@@ -1,14 +1,18 @@
 import styles from './PriceSection.module.css';
 import Button from '../Button/Button';
 import Title from '../Title/Title';
-import { RepairSVG } from '../RepairSvg/RepairSVG';
 
 export function PriceSection() {
   return (
     <section className={styles.priceSection}>
         <Title>Цены на ремонт и строительство</Title>
         <div className={styles.blockContent}>
-        <RepairSVG />
+        <div className={styles.imageContainer}>
+            <div 
+              className={styles.image}
+              style={{ backgroundImage: "url('repairExample.jpg')" }}
+            />
+          </div>
         <div className={styles.content}>
           <p className={styles.text}>
             <strong>Одно из ключевых преимуществ нашей компании - прозрачность расчета сметы на ремонт и строительство в Сыктывкаре.</strong>

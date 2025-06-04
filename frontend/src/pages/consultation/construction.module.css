@@ -6,8 +6,52 @@
     padding: 30px;
     border-radius: 15px;
     margin: 40px 50px;
+    gap: 20px;
 }
 
-.container{
+.container {
     margin: 0 50px;
+}
+
+@media (max-width: 1200px) {
+    .cartContainer {
+        margin: 40px 30px;
+    }
+
+    .container {
+        margin: 0 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .cartContainer {
+        margin: 30px 20px;
+        padding: 20px;
+    }
+
+    .container {
+        margin: 0 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cartContainer {
+        margin: 20px 15px;
+        padding: 15px;
+    }
+
+    .container {
+        margin: 0 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .cartContainer {
+        margin: 15px 10px;
+        padding: 10px;
+    }
+
+    .container {
+        margin: 0 10px;
+    }
 }

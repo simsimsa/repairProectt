@@ -5,21 +5,12 @@
     overflow: hidden;
 }
 
-@keyframes borderFlow {
-    0% {
-        background-position: -100% 0;
-    }
-
-    100% {
-        background-position: 100% 0;
-    }
-}
-
-.container{
+.container {
     display: flex;
     gap: 40px;
     align-items: center;
     justify-content: center;
+    padding: 20px;
 }
 
 .content {
@@ -31,13 +22,6 @@
     backdrop-filter: blur(5px);
 }
 
-.blockContent {
-    justify-content: center;
-    display: flex;
-    gap: 70px;
-    align-items: center;
-}
-
 .text {
     color: #cbb376;
     font-size: 20px;
@@ -47,13 +31,6 @@
 
 .text strong {
     color: #f8d49e;
-}
-
-.consultation {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 0 10px;
 }
 
 .imageWrapper {
@@ -70,18 +47,84 @@
     box-shadow: inset 0 0 20px rgba(184, 134, 11, 0.1);
 }
 
-.imageWrapper:hover .image {
-    border-color: rgba(203, 179, 118, 0.5);
-    box-shadow: 0 0 30px rgba(184, 134, 11, 0.3),
-        inset 0 0 30px rgba(184, 134, 11, 0.2);
-}
-
-@media (max-width: 768px) {
-    .priceSection {
-        padding: 25px 15px;
+@media (max-width: 1200px) {
+    .container {
+        gap: 30px;
     }
 
     .content {
-        padding: 20px 15px;
+        padding: 15px 25px 20px;
+    }
+
+    .image {
+        height: 380px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .content {
+        max-width: 100%;
+        padding: 15px 20px;
+    }
+
+    .imageWrapper {
+        flex: 0 0 auto;
+        width: 80%;
+    }
+
+    .image {
+        height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .servicesSection {
+        margin-bottom: 20px;
+    }
+
+    .container {
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .text {
+        font-size: 18px;
+    }
+
+    .imageWrapper {
+        width: 90%;
+    }
+
+    .image {
+        height: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 10px;
+        gap: 15px;
+    }
+
+    .content {
+        padding: 12px 15px;
+    }
+
+    .text {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .imageWrapper {
+        width: 100%;
+    }
+
+    .image {
+        height: 250px;
     }
 }
