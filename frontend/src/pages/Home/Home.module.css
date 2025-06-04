@@ -2,14 +2,16 @@
     margin: 30px 50px;
 }
 
-.textH1{
+
+
+.textH1 {
     font-size: 24px;
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.825);
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    color: #f8e8c8;
+    text-shadow: 1px 1px 3px rgba(109, 81, 21, 0.5);
 }
 
-.H1HeaderContainer{
+.H1HeaderContainer {
     width: 25vw;
     display: flex;
     flex-direction: column;
@@ -18,7 +20,7 @@
     justify-content: end;
 }
 
-.h1Header{
+.h1Header {
     display: flex;
     align-items: center;
     justify-content: space-between;

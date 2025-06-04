@@ -17,7 +17,7 @@ export function Layout() {
     return (
         <div className={styles["layout"]}>
             <div className={styles["menu_layout"]}>
-                <div>Тут будет логотип</div>
+                <div className={styles.logo}>НАЗВАНИЕ</div>
                 <div className={styles["navigate"]}>
                     <div 
                         className={styles["dropdownContainer"]}
@@ -68,12 +68,7 @@ export function Layout() {
                     <NavLink
                         to="/gallery"
                         className={({ isActive }) =>
-                            cn(styles["goTo"], {
-                                [styles.active]:
-                                    isActive ||
-                                    location.pathname === "/Chatroom" ||
-                                    location.pathname=="/Buddy",
-                            })
+                            cn(styles["goTo"], { [styles.active]: isActive })
                         }
                     >
                         Галерея
@@ -89,11 +84,7 @@ export function Layout() {
                     <NavLink
                         to="company"
                         className={({ isActive }) =>
-                            cn(styles["goTo"], {
-                                [styles.active]:
-                                    isActive ||
-                                    location.pathname === "/Settings",
-                            })
+                            cn(styles["goTo"], { [styles.active]: isActive })
                         }
                     >
                         О компании
@@ -101,17 +92,16 @@ export function Layout() {
                     <NavLink
                         to="contacts"
                         className={({ isActive }) =>
-                            cn(styles["goTo"], {
-                                [styles.active]:
-                                    isActive ||
-                                    location.pathname === "/Settings",
-                            })
+                            cn(styles["goTo"], { [styles.active]: isActive })
                         }
                     >
                         Контакты
                     </NavLink>
                 </div>
-                <div>Номера связи</div>
+                <div className={styles.contacts}>
+                    <div className={styles.phone}>+7 (123) 456-78-90</div>
+                    <div className={styles.hours}>10:00 - 22:00</div>
+                </div>
             </div>
             <div className={styles["outlet"]}>
                 <Outlet />

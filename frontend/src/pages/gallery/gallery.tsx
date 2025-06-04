@@ -6,7 +6,7 @@ export function Gallery() {
     return (
         <div>
             <div className={styles.titleContainer}>
-                <Title>Галерея работ</Title>
+                <Title>ГАЛЕРЕЯ РАБОТ</Title>
             </div>
             <GallerySection/>
         </div>
