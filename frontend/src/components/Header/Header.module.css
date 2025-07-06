@@ -92,15 +92,19 @@
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
+    .header{
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
     .mainTitle {
         font-size: 48px;
-        padding: 12px 40px;
+        padding: 12px 0px;
     }
 
     .subTitle {
-        font-size: 40px;
-        padding: 8px 35px;
+        font-size: 48px;
+        padding: 8px 0px;
     }
 
     .companyName {
@@ -108,15 +112,31 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .mainTitle {
         font-size: 36px;
-        padding: 10px 30px;
+        padding: 12px 0px;
+    }
+
+    .subTitle {
+        font-size: 36px;
+        padding: 8px 0px;
+    }
+
+    .companyName {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mainTitle {
+        font-size: 30px;
+        padding: 6px 0;
     }
 
     .subTitle {
         font-size: 30px;
-        padding: 6px 25px;
+        padding: 6px 0;
     }
 
     .companyName {
@@ -126,13 +146,13 @@
 
 @media (max-width: 480px) {
     .mainTitle {
-        font-size: 28px;
-        padding: 8px 20px;
+        font-size: 24px;
+        padding: 8px 0px;
     }
 
     .subTitle {
         font-size: 24px;
-        padding: 5px 15px;
+        padding: 5px 0px;
     }
 
     .companyName {

@@ -150,6 +150,7 @@
 @media (max-width: 768px) {
     .priceTableContainer {
         padding: 15px;
+        margin: 20px 10px;
     }
 
     .tableWrapper {

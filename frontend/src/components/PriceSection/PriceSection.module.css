@@ -59,7 +59,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px 0 10px;
+    padding: 20px 0 10px;
 }
 
 .imageContainer {
@@ -145,7 +145,7 @@
     }
 
     .consultation {
-        padding: 30px 0 10px;
+        padding: 10px 0 10px;
     }
 }
 
@@ -181,6 +181,6 @@
     }
 
     .consultation {
-        padding: 20px 0 10px;
+        padding: 5px 0 10px;
     }
 }

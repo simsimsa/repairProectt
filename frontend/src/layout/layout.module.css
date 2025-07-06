@@ -14,13 +14,14 @@
 
 .menu_layout {
     background: rgba(40, 30, 10, 0.9);
-    width: 80%;
+    width: 100%;
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 50px;
+    padding: 10px 50px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    position: relative;
+    position: fixed;
     z-index: 100;
     backdrop-filter: blur(5px);
     border-bottom: 1px solid rgba(212, 175, 55, 0.3);
@@ -147,28 +148,68 @@
 .outlet {
     width: 100%;
     flex-grow: 1;
+    padding-top: 70px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1200px) {
+    .menu_layout {
+        padding: 15px 30px;
+    }
+    .logo {
+        font-size: 24px;
+    }
+    .navigate{
+        gap: 15px;
+    }
+    .goTo {
+        font-size: 16px;
+        padding: 8px;
+    }
+    .contacts {
+        align-items: center;
+    }
+    .phone{
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 1024px) {
     .menu_layout {
-        padding: 15px 30px;
+        padding: 10px 15px;
+    }
+
+    .outlet {
+        padding-top: 50px;
     }
 
     .navigate {
-        gap: 15px;
+        gap: 5px;
+        padding: 5px;
     }
 
     .goTo {
-        font-size: 16px;
-        padding: 8px 10px;
+        font-size: 14px;
+        padding: 8px 5px;
+    }
+    .phone{
+        font-size: 14px;
+    }
+    .logo {
+        font-size: 18px;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 810px) {
     .menu_layout {
+        position: relative;
         flex-direction: column;
-        padding: 15px;
-        gap: 15px;
+        padding: 5px;
+        gap: 0;
+    }
+
+    .outlet {
+        padding-top: 0;
     }
 
     .navigate {
@@ -176,10 +217,12 @@
         justify-content: center;
         gap: 10px;
     }
-
-    .contacts {
-        align-items: center;
-        margin-top: 10px;
+    .contacts{
+        display: none;
+    }
+    .goTo {
+        font-size: 12px;
+        padding: 5px;
     }
 }
 

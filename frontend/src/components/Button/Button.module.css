@@ -61,3 +61,12 @@
     width: 150px;
     padding: 8px 10px;
 }
+
+@media (max-width:1200px){
+    .button {
+        font-size: 22px;
+        width: 220px;
+        padding: 6px 5px 12px;
+        box-sizing: border-box;
+    }
+}
