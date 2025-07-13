@@ -23,7 +23,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     align-items: stretch;
 }
 
@@ -94,6 +94,11 @@
 @media (max-width: 768px) {
     .contactCard {
         padding: 25px 20px;
+    }
+
+    .contactBlocks {
+        margin-bottom: 20px;
+        gap: 15px;
     }
 
     .additionalInfo {

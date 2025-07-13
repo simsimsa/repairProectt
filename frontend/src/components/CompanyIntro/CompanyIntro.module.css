@@ -58,3 +58,9 @@
         font-size: 32px;
     }
 }
+
+@media (max-width: 768px){
+    .container {
+        gap: 0px;
+    }
+}

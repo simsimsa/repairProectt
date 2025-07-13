@@ -8,66 +8,8 @@ import Header from "../../components/Header/Header";
 import Hr from "../../components/HR/Hr";
 import ServiceCard from "../../components/ServiceCard/ServiceCard";
 import Title from "../../components/Title/Title";
+import { services } from "../../ExportInfo/services";
 import styles from './Home.module.css'
-
-    const services = [
-      {
-        title: 'КОСМЕТИЧЕСКИЙ РЕМОНТ',
-        price: 'от 9 900 ₽/м²',
-        duration: 'от 30 дней',
-        buttonText: 'оставить заявку',
-        image: '/repairExample.jpg',
-        features: [
-          'Выравнивание стен и потолков',
-          'Оклейка обоями',
-          'Укладка ламината',
-          'Замена сантехники',
-          'Монтаж светильников'
-        ]
-      },
-      {
-        title: 'КАПИТАЛЬНЫЙ РЕМОНТ',
-        price: 'от 16 900 ₽/м²',
-        duration: 'от 45 дней',
-        buttonText: 'оставить заявку',
-        image: '/repairExample.jpg',
-        features: [
-          'Полная перепланировка',
-          'Замена электропроводки',
-          'Замена труб водоснабжения',
-          'Черновая отделка',
-          'Утепление помещений'
-        ]
-      },
-      {
-        title: 'СТРОИТЕЛЬСТВО ДОМОВ',
-        price: 'от 32 900 ₽/м²',
-        duration: 'от 4 месяцев',
-        buttonText: 'оставить заявку',
-        image: '/repairExample.jpg',
-        features: [
-          'Каркасные технологии',
-          'Дома из бруса',
-          'Кирпичные коттеджи',
-          'Полный цикл работ',
-          'Авторский надзор'
-        ]
-      },
-      {
-        title: 'ЭЛИТНЫЙ РЕМОНТ',
-        price: 'от 29 900 ₽/м²',
-        duration: 'от 60 дней',
-        buttonText: 'оставить заявку',
-        image: '/repairExample.jpg',
-        features: [
-          'Дизайн-проект',
-          'Премиальные материалы',
-          'Авторский надзор',
-          'Комплексная отделка',
-          'Умный дом'
-        ]
-      }
-    ];
 
 export function Home() {
     return (

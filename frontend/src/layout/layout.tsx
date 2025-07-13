@@ -17,7 +17,7 @@ export function Layout() {
     return (
         <div className={styles["layout"]}>
             <div className={styles["menu_layout"]}>
-                <div className={styles.logo}>НАЗВАНИЕ</div>
+                <div className={styles.logo}>КОНТАКТ</div>
                 <div className={styles["navigate"]}>
                     <div 
                         className={styles["dropdownContainer"]}
@@ -99,7 +99,7 @@ export function Layout() {
                     </NavLink>
                 </div>
                 <div className={styles.contacts}>
-                    <div className={styles.phone}>+7 (123) 456-78-90</div>
+                    <div className={styles.phone}>+7 (908) 717-66-64</div>
                     <div className={styles.hours}>10:00 - 22:00</div>
                 </div>
             </div>

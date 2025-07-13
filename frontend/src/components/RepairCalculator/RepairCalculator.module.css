@@ -321,6 +321,10 @@
         grid-template-columns: 1fr;
     }
 
+    .calculatorTitle {
+        font-size: 24px;
+    }
+
     .resultValue {
-        font-size: 32px;
+        font-size: 24px;
     } }
