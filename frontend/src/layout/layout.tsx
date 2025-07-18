@@ -17,7 +17,7 @@ export function Layout() {
     return (
         <div className={styles["layout"]}>
             <div className={styles["menu_layout"]}>
-                <div className={styles.logo}>КОНТАКТ</div>
+                <div className={styles.logo}>КАСКАД</div>
                 <div className={styles["navigate"]}>
                     <div 
                         className={styles["dropdownContainer"]}
